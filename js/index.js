@@ -10,9 +10,7 @@ const size = 30;
 
 const initialPosition = { x: 270, y: 240 }
 
-let snake = [
-    initialPosition
-]
+let snake = [initialPosition]
 
 const incrementScore = () => (
     score.innerText = +score.innerText + 10
