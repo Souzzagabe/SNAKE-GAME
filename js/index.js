@@ -129,13 +129,13 @@ const checkEat = () => {
     }
 }
 
-const checkCollision = ()  => {
-    const head = snake[snake.length -1]
+const checkCollision = () => {
+    const head = snake[snake.length - 1]
     const canvasLimit = canvas.width - size
-    const neckIndex = snake.length -2
+    const neckIndex = snake.length - 2
 
-    const wallCollisiion = 
-    head.x < 0 || head.x > canvasLimit || head.y < 0 || head.y > canvasLimit
+    const wallCollisiion =
+        head.x < 0 || head.x > canvasLimit || head.y < 0 || head.y > canvasLimit
 
     selfCollision = snake.find((position, index) => {
         return index < neckIndex && position.x == head.x && position.y == head.y
@@ -187,13 +187,10 @@ document.addEventListener("keydown", ({ key }) => {
     }
 })
 
-
 buttonPlay.addEventListener("click", () => {
     score.innerText = "00"
     menu.style.display = "none"
     canvas.style.filter = "none"
 
-    snake = [
-        { x: 270, y: 240 },
-    ]
+    snake = [initialPosition ]
 })
