@@ -52,6 +52,20 @@ const drawFood = () => {
     ctx.shadowBlur = 0
 }
 
+const generateNewFoodPosition = () => {
+    let x = randomPosition()
+    let y = randomPosition()
+
+    while (snake.find((position) => position.x === x && position.y === y)) {
+        x = randomPosition()
+        y = randomPosition()
+    }
+
+    food.x = x
+    food.y = y
+    food.color = randomColor()
+}
+
 const drawSnake = () => {
     ctx.fillStyle = "#96C494";
 
@@ -154,7 +168,7 @@ const gameOver = () => {
 
 const gameLoop = () => {
     clearInterval(loopId)
-
+    
     ctx.clearRect(0, 0, 600, 600)
     drawGrid()
     drawFood()
@@ -191,4 +205,7 @@ buttonPlay.addEventListener("click", () => {
     canvas.style.filter = "none"
 
     snake = [initialPosition ]
+    generateNewFoodPosition()
+
+    // drawFood()
 })
