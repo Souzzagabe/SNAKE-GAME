@@ -7,9 +7,7 @@ const menu = document.querySelector(".menu-screen")
 const buttonPlay = document.querySelector(".btn-play")
 
 const size = 30;
-
 const initialPosition = { x: 270, y: 240 }
-
 let snake = [initialPosition]
 
 const incrementScore = () => (
@@ -207,5 +205,4 @@ buttonPlay.addEventListener("click", () => {
     snake = [initialPosition ]
     generateNewFoodPosition()
 
-    // drawFood()
 })
