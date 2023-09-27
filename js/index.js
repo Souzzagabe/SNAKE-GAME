@@ -198,6 +198,7 @@ document.addEventListener("keydown", ({ key }) => {
 })
 
 buttonPlay.addEventListener("click", () => {
+    
     score.innerText = "00"
     menu.style.display = "none"
     canvas.style.filter = "none"

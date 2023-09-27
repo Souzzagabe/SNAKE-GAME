@@ -69,3 +69,9 @@ canvas {
     cursor: pointer;
     width: 150px
 }
+
+.instruction {
+    padding: 50px;
+    font-size: 10px;
+    color: #333;
+}
