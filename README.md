@@ -36,4 +36,4 @@ Loop Principal do Jogo: O loop principal do jogo cuida da renderização, movime
 
 Tela de Menu: Uma tela de menu é exibida no início e quando o jogo termina. Ela inclui um botão "Jogar" para reiniciar o jogo.
 
-Efeitos Sonoros: O jogo inclui efeitos sonoros quando a cobra coleta comida.
+Efeitos Sonoros: O jogo inclui efeitos sonoros quando a cobra coleta comida
